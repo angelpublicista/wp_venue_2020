@@ -127,11 +127,13 @@ function add_class_subheader($tipo){
             case '3':
                 $alHorizontal = "text-center";
                 break;
-
-            return $alHorizontal;
-        }
+		}
+		
+		return $alHorizontal;
         
-    } elseif ($tipo == 'banner') {
+	} 
+	
+	if ($tipo == 'banner') {
 		if ($geniorama['opt-bg-subheaders'] === '1') {
 			$classBanner = 'opacity-layer';
 		} else{
