@@ -1,3 +1,34 @@
+.slick-footer-brands {
+  margin: 2em 0;
+}
+.slick-footer-brands .item {
+  text-align: center;
+  padding: 1em;
+}
+.slick-footer-brands .item img {
+  margin: auto;
+}
+.slick-footer-brands .slick-arrow::before {
+  color: #EDB170;
+  font-size: 30px;
+  text-align: center;
+}
+.slick-footer-brands .slick-prev {
+  left: 20px;
+}
+.slick-footer-brands .slick-next {
+  right: 20px;
+}
+.slick-footer-brands .slick-dots {
+  bottom: -50px;
+}
+.slick-footer-brands .slick-dots li button::before {
+  font-size: 12px;
+}
+.slick-footer-brands .slick-dots li.slick-active button::before {
+  color: #EDB170;
+}
+
 .form-master {
   background-color: transparent !important;
   color: white !important;
