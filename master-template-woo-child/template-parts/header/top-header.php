@@ -31,7 +31,7 @@ global $geniorama
 					<?php show_search_button("top-header-buttons") ?>
 				<?php endif; ?>
 
-				<li class="nav-item nav-link link-language"><?php echo do_shortcode('[glt language="Spanish" label="Español" image="yes" text="no" image_size="24"]'); ?></li>
+				<li class="nav-item nav-link link-language ml-2"><?php echo do_shortcode('[glt language="Spanish" label="Español" image="yes" text="no" image_size="24"]'); ?></li>
 				<li class="nav-item nav-link link-language"><?php echo do_shortcode('[glt language="English" label="English" image="yes" text="no" image_size="24"]'); ?></li>
 			</ul>
 		<?php endif; ?>
