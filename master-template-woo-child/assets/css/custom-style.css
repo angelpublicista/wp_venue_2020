@@ -29,6 +29,35 @@
   color: #EDB170;
 }
 
+.box-top-header .box-info-menu span {
+  color: white;
+}
+.box-top-header .box-info-menu span:hover {
+  opacity: 0.5;
+}
+.box-top-header .link-language {
+  padding: 0.5em;
+}
+
+.static-header .box-logo .img-brand {
+  transform: scale(2);
+  margin-top: -60px;
+}
+
+.sticky-header {
+  z-index: 2 !important;
+}
+
+.box-top-header .box-info-menu span {
+  color: white;
+}
+.box-top-header .box-info-menu span:hover {
+  opacity: 0.5;
+}
+.box-top-header .link-language {
+  padding: 0.5em;
+}
+
 .form-master {
   background-color: transparent !important;
   color: white !important;
