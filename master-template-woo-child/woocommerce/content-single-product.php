@@ -69,6 +69,42 @@ if ( post_password_required() ) {
 		</div>
 	</div>
 </section>
+<section id="vn-ats" class="vn-ats">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-6 item pr-5">
+				<div class="content">
+					<h3>BOLETA GENERAL</h3>
+					<ul>
+						<li>Lorem ipsum dolor sit ammet</li>
+						<li>Lorem ipsum dolor sit ammet</li>
+						<li>Lorem ipsum dolor sit ammet</li>
+						<li>Lorem ipsum dolor sit ammet</li>
+					</ul>
+					<div class="row buttons">
+						<a href="#">AÑADIR AL CARRITO</a>
+						<a href="#">COMPRAR</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 item pl-5">
+				<div class="content">
+					<h3>BOLETA V.I.P</h3>
+					<ul>
+						<li>Lorem ipsum dolor sit ammet</li>
+						<li>Lorem ipsum dolor sit ammet</li>
+						<li>Lorem ipsum dolor sit ammet</li>
+						<li>Lorem ipsum dolor sit ammet</li>
+					</ul>
+					<div class="row buttons">
+						<a href="#">AÑADIR AL CARRITO</a>
+						<a href="#">COMPRAR</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <section id="vn-event" class="vn-event">
 	<img src="http://localhost/venue-virtual/wp-content/uploads/2020/10/bg-sec3.jpg" alt="" class="vn-event__img">
 	<div class="vn-event__cont">
