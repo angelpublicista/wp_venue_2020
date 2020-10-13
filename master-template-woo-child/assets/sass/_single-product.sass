@@ -1,0 +1,289 @@
+.single-product
+    #container-page
+        max-width: 100% !important
+        padding: 0 !important
+.vn-desc
+    background-image: url(http://localhost/venue-virtual/wp-content/uploads/2020/10/bg-sec1-sp.jpg)
+    padding: 4em 0
+    &__title
+        color: #fff
+        font-size: 4em
+        line-height: 1.2em
+    &__date
+        display: flex
+        margin-bottom: 3em
+    &__year
+        -webkit-text-stroke: 1px #fff
+        color: transparent
+        font-size: 4em
+        line-height: 1.1em
+    &__month
+        -webkit-text-stroke: 1px #fff
+        color: transparent
+        font-size: 2em
+        text-transform: uppercase
+        padding-right: .5em
+    &__description
+        p
+            color: #fff
+    &__video
+        padding-right: 2em
+        iframe
+            border-radius: 30px
+            border: 1px solid #fff
+
+.vn-spon
+    padding: 4em 0
+    position: relative
+    .vs-slick
+        margin-top: 5em
+        padding: 0 3em
+        i 
+            font-size: 1.3em
+        .item
+            display: flex
+            justify-content: center
+            img
+                width: 220px
+    .nav-left
+        position: absolute
+        left: 0
+        top: 30%
+        background-color: $p-color
+        width: 60px
+        height: 60px
+        border: none
+        border-radius: 50%
+        transition: all .5s
+        &:hover
+            background-color: $s-color
+            color: #fff
+    .nav-right
+        position: absolute
+        right: 0
+        top: 30%
+        background-color: $p-color
+        width: 60px
+        height: 60px
+        border: none
+        border-radius: 50%
+        transition: all .5s
+        &:hover
+            background-color: $s-color
+            color: #fff
+    .slick-dots
+        bottom: -70px
+        li
+            button
+                &::before
+                    font-size: 15px
+                    color: #999999
+                    opacity: 1
+        .slick-active
+            button
+                &::before
+                    color: #39FFD2
+                    opacity: 1
+.vn-event
+    &__cont
+        background-image: url(http://localhost/venue-virtual/wp-content/uploads/2020/10/bg-event.jpg)
+        padding: 5em 0
+        background-position: center
+        background-size: cover
+    &__item
+        padding: 0 3em  
+        .vn-content
+            background: #ffffff
+            position: relative
+            border-radius: 15px
+            padding: .7em 2em
+        .icon
+            position: absolute
+            top: -10px
+            left: 10px
+            border-radius: 50%
+            background-color: $p-color
+            padding: 1em
+            img
+                width: 60px
+        .date
+            margin-left: 5.5em
+            .title
+                color: #000000
+                display: block
+            .desc
+                color: #6D6D6D
+.vn-ints
+    padding: 5em 0
+    &__cont-img
+        background-color: $p-color
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 300px
+        height: 300px
+        border-radius: 50%
+        padding: 4em
+        -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
+        -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
+        box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
+    &__title
+        font-size: 3em
+    ul
+        list-style: none
+        padding: 0
+        li
+            display: flex
+            align-items: center
+            margin-bottom: 1.5em
+        .number
+            color: #262626
+            background-color: $s-color
+            width: 30px
+            height: 30px
+            display: inline-flex
+            border-radius: 50%
+            font-size: 3em
+            justify-content: center
+            align-items: center
+            font-weight: bold
+            margin-right: .3em
+        a 
+            color: #757575
+            margin-left: .2em
+            font-weight: bold
+            transition: all .4s
+            &:hover
+                color: $s-color
+.vn-rec
+    background-color: #E6E6E6
+    padding: 4em 0
+.vn-mdp
+    padding: 4em 0
+    position: relative
+    .circle
+        position: absolute
+        background-color: $s-color
+        width: 220px
+        height: 220px
+        border-radius: 50%
+        top: 36px
+        left: 0
+        right: 0
+        margin: auto
+    .vn-title
+        line-height: 1em
+        margin: 0
+        position: relative
+        top: 20px
+    &__cont
+        -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
+        -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
+        box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
+        width: 90%
+        margin: auto
+        border-radius: 60px
+        position: relative
+        z-index: 1
+        background-color: #ffffff
+        .vs-slick
+            padding: 0 9em
+            .slick-track
+                display: flex
+                align-items: center
+            .item
+                display: flex
+                justify-content: center
+                img
+                    width: 120px
+        .nav-left
+            position: absolute
+            left: 50px
+            top: 30%
+            background-color: $p-color
+            width: 60px
+            height: 60px
+            border: none
+            border-radius: 50%
+            transition: all .5s
+            &:hover
+                background-color: $s-color
+                color: #fff
+        .nav-right
+            position: absolute
+            right: 50px
+            top: 30%
+            background-color: $p-color
+            width: 60px
+            height: 60px
+            border: none
+            border-radius: 50%
+            transition: all .5s
+            &:hover
+                background-color: $s-color
+                color: #fff
+        .slick-dots
+            bottom: -70px
+            position: absolute
+            left: 0
+            li
+                button
+                    &::before
+                        font-size: 15px
+                        color: #999999
+                        opacity: 1
+            .slick-active
+                button
+                    &::before
+                        color: #39FFD2
+                        opacity: 1
+.vn-recents
+    .vs-slick
+        .item
+            padding: 1em 2em
+            margin: 1em 0
+            .cont-item
+                padding: 1em
+                background-color: #ffffff
+                -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
+                -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
+                box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
+                border-radius: 40px
+                position: relative
+                img
+                    height: 350px
+                    width: auto
+                    object-fit: cover
+                    border-radius: 30px
+                .vn-caption
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    width: 100%
+                    padding: 1em
+                    .content
+                        background-color: rgba(0, 0, 0, .7)
+                        padding: 1.5em 2em
+                        border-radius: 0 0 30px 30px
+                        transition: all .5s
+                        h3
+                            color: #ffffff
+                            line-height: 1.1em
+                            margin: 0
+                        span
+                            color: #ffffff
+                            text-transform: capitalize
+                        a
+                            color: #ffffff
+                            border: 1px solid #ffffff
+                            padding: .6em 2em
+                            border-radius: 20px
+                        span, .button
+                            display: none
+                            transition: all .5s
+                &:hover .content
+                    background-color: $s-color
+                &:hover span
+                    display: inline !important
+                &:hover .button
+                    display: block !important

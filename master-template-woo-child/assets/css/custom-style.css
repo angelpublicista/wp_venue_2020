@@ -1,3 +1,26 @@
+.vn-title span {
+  color: #517C99;
+  position: relative;
+}
+.vn-title span::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  top: 50%;
+  left: 140%;
+  background-color: #EDB170;
+}
+.vn-title span::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  top: 50%;
+  right: 140%;
+  background-color: #EDB170;
+}
+
 .slick-footer-brands {
   margin: 2em 0;
 }
@@ -27,6 +50,354 @@
 }
 .slick-footer-brands .slick-dots li.slick-active button::before {
   color: #EDB170;
+}
+
+.single-product #container-page {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.vn-desc {
+  background-image: url(http://localhost/venue-virtual/wp-content/uploads/2020/10/bg-sec1-sp.jpg);
+  padding: 4em 0;
+}
+.vn-desc__title {
+  color: #fff;
+  font-size: 4em;
+  line-height: 1.2em;
+}
+.vn-desc__date {
+  display: flex;
+  margin-bottom: 3em;
+}
+.vn-desc__year {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-size: 4em;
+  line-height: 1.1em;
+}
+.vn-desc__month {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding-right: 0.5em;
+}
+.vn-desc__description p {
+  color: #fff;
+}
+.vn-desc__video {
+  padding-right: 2em;
+}
+.vn-desc__video iframe {
+  border-radius: 30px;
+  border: 1px solid #fff;
+}
+
+.vn-spon {
+  padding: 4em 0;
+  position: relative;
+}
+.vn-spon .vs-slick {
+  margin-top: 5em;
+  padding: 0 3em;
+}
+.vn-spon .vs-slick i {
+  font-size: 1.3em;
+}
+.vn-spon .vs-slick .item {
+  display: flex;
+  justify-content: center;
+}
+.vn-spon .vs-slick .item img {
+  width: 220px;
+}
+.vn-spon .nav-left {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  background-color: #EDB170;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.vn-spon .nav-left:hover {
+  background-color: #517C99;
+  color: #fff;
+}
+.vn-spon .nav-right {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  background-color: #EDB170;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.vn-spon .nav-right:hover {
+  background-color: #517C99;
+  color: #fff;
+}
+.vn-spon .slick-dots {
+  bottom: -70px;
+}
+.vn-spon .slick-dots li button::before {
+  font-size: 15px;
+  color: #999999;
+  opacity: 1;
+}
+.vn-spon .slick-dots .slick-active button::before {
+  color: #39FFD2;
+  opacity: 1;
+}
+
+.vn-event__cont {
+  background-image: url(http://localhost/venue-virtual/wp-content/uploads/2020/10/bg-event.jpg);
+  padding: 5em 0;
+  background-position: center;
+  background-size: cover;
+}
+.vn-event__item {
+  padding: 0 3em;
+}
+.vn-event__item .vn-content {
+  background: #ffffff;
+  position: relative;
+  border-radius: 15px;
+  padding: 0.7em 2em;
+}
+.vn-event__item .icon {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  border-radius: 50%;
+  background-color: #EDB170;
+  padding: 1em;
+}
+.vn-event__item .icon img {
+  width: 60px;
+}
+.vn-event__item .date {
+  margin-left: 5.5em;
+}
+.vn-event__item .date .title {
+  color: #000000;
+  display: block;
+}
+.vn-event__item .date .desc {
+  color: #6D6D6D;
+}
+
+.vn-ints {
+  padding: 5em 0;
+}
+.vn-ints__cont-img {
+  background-color: #EDB170;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 4em;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
+}
+.vn-ints__title {
+  font-size: 3em;
+}
+.vn-ints ul {
+  list-style: none;
+  padding: 0;
+}
+.vn-ints ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+.vn-ints ul .number {
+  color: #262626;
+  background-color: #517C99;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  border-radius: 50%;
+  font-size: 3em;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 0.3em;
+}
+.vn-ints ul a {
+  color: #757575;
+  margin-left: 0.2em;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+.vn-ints ul a:hover {
+  color: #517C99;
+}
+
+.vn-rec {
+  background-color: #E6E6E6;
+  padding: 4em 0;
+}
+
+.vn-mdp {
+  padding: 4em 0;
+  position: relative;
+}
+.vn-mdp .circle {
+  position: absolute;
+  background-color: #517C99;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  top: 36px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.vn-mdp .vn-title {
+  line-height: 1em;
+  margin: 0;
+  position: relative;
+  top: 20px;
+}
+.vn-mdp__cont {
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
+  width: 90%;
+  margin: auto;
+  border-radius: 60px;
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+}
+.vn-mdp__cont .vs-slick {
+  padding: 0 9em;
+}
+.vn-mdp__cont .vs-slick .slick-track {
+  display: flex;
+  align-items: center;
+}
+.vn-mdp__cont .vs-slick .item {
+  display: flex;
+  justify-content: center;
+}
+.vn-mdp__cont .vs-slick .item img {
+  width: 120px;
+}
+.vn-mdp__cont .nav-left {
+  position: absolute;
+  left: 50px;
+  top: 30%;
+  background-color: #EDB170;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.vn-mdp__cont .nav-left:hover {
+  background-color: #517C99;
+  color: #fff;
+}
+.vn-mdp__cont .nav-right {
+  position: absolute;
+  right: 50px;
+  top: 30%;
+  background-color: #EDB170;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.vn-mdp__cont .nav-right:hover {
+  background-color: #517C99;
+  color: #fff;
+}
+.vn-mdp__cont .slick-dots {
+  bottom: -70px;
+  position: absolute;
+  left: 0;
+}
+.vn-mdp__cont .slick-dots li button::before {
+  font-size: 15px;
+  color: #999999;
+  opacity: 1;
+}
+.vn-mdp__cont .slick-dots .slick-active button::before {
+  color: #39FFD2;
+  opacity: 1;
+}
+
+.vn-recents .vs-slick .item {
+  padding: 1em 2em;
+  margin: 1em 0;
+}
+.vn-recents .vs-slick .item .cont-item {
+  padding: 1em;
+  background-color: #ffffff;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
+  border-radius: 40px;
+  position: relative;
+}
+.vn-recents .vs-slick .item .cont-item img {
+  height: 350px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.vn-recents .vs-slick .item .cont-item .vn-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+}
+.vn-recents .vs-slick .item .cont-item .vn-caption .content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.5em 2em;
+  border-radius: 0 0 30px 30px;
+  transition: all 0.5s;
+}
+.vn-recents .vs-slick .item .cont-item .vn-caption .content h3 {
+  color: #ffffff;
+  line-height: 1.1em;
+  margin: 0;
+}
+.vn-recents .vs-slick .item .cont-item .vn-caption .content span {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.vn-recents .vs-slick .item .cont-item .vn-caption .content a {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 0.6em 2em;
+  border-radius: 20px;
+}
+.vn-recents .vs-slick .item .cont-item .vn-caption .content span, .vn-recents .vs-slick .item .cont-item .vn-caption .content .button {
+  display: none;
+  transition: all 0.5s;
+}
+.vn-recents .vs-slick .item .cont-item:hover .content {
+  background-color: #517C99;
+}
+.vn-recents .vs-slick .item .cont-item:hover span {
+  display: inline !important;
+}
+.vn-recents .vs-slick .item .cont-item:hover .button {
+  display: block !important;
 }
 
 .form-master {
