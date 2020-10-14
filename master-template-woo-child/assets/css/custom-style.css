@@ -635,9 +635,17 @@
   border-radius: 20px;
 }
 
+.woocommerce-MyAccount-content {
+  padding-left: 2em;
+}
 .woocommerce-MyAccount-content .woocommerce-message, .woocommerce-MyAccount-content .woocommerce-Message {
-  background-color: #b5b5b5;
+  background-color: #ffffff;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
   color: #273133;
+  border-radius: 30px;
+  border-top: none;
 }
 .woocommerce-MyAccount-content .button {
   background-color: #EDB170 !important;
@@ -653,10 +661,15 @@
 }
 .woocommerce-MyAccount-content .woocommerce-Addresses .u-column1, .woocommerce-MyAccount-content .woocommerce-Addresses .u-column2 {
   max-width: 50%;
-  border: 1px solid #b5b5b5;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.21);
   padding: 1em;
   border-radius: 20px;
   font-family: Montserrat;
+}
+.woocommerce-MyAccount-content .woocommerce-Addresses .u-column1 h3, .woocommerce-MyAccount-content .woocommerce-Addresses .u-column2 h3 {
+  line-height: 1.2em;
 }
 .woocommerce-MyAccount-content .woocommerce-Addresses .u-column1 .edit, .woocommerce-MyAccount-content .woocommerce-Addresses .u-column2 .edit {
   background-color: #EDB170;
@@ -670,11 +683,19 @@
 .woocommerce-MyAccount-content .woocommerce-Addresses .u-column1 .edit:hover, .woocommerce-MyAccount-content .woocommerce-Addresses .u-column2 .edit:hover {
   background-color: #1781AA;
 }
-.woocommerce-MyAccount-content input {
-  height: 35px;
-  border: 1px solid #b5b5b5;
-  border-radius: 20px;
+.woocommerce-MyAccount-content input, .woocommerce-MyAccount-content .select2-selection {
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 30px;
   padding-left: 1em;
+}
+.woocommerce-MyAccount-content .select2-selection {
+  display: flex;
+  align-items: center;
+}
+.woocommerce-MyAccount-content .select2-selection b {
+  left: 20 !important;
+  top: 90% !important;
 }
 .woocommerce-MyAccount-content .password-input {
   display: contents !important;

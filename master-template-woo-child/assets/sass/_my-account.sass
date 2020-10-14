@@ -65,9 +65,15 @@
                 color: #ffffff
                 border-radius: 20px
 .woocommerce-MyAccount-content
+    padding-left: 2em
     .woocommerce-message, .woocommerce-Message
-        background-color: #b5b5b5
+        background-color: #ffffff
+        -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
+        -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
+        box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
         color: #273133
+        border-radius: 30px
+        border-top: none
     .button
         background-color: $p-color !important
         font-family:  Montserrat !important
@@ -81,10 +87,14 @@
     .woocommerce-Addresses
         .u-column1, .u-column2
             max-width: 50%
-            border: 1px solid #b5b5b5
+            -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
+            -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
+            box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.21)
             padding: 1em
             border-radius: 20px
             font-family: Montserrat
+            h3 
+                line-height: 1.2em
             .edit
                 background-color: $p-color
                 float: left
@@ -95,11 +105,17 @@
                 transition: all .5s
                 &:hover
                     background-color: #1781AA
-    input
-        height: 35px
-        border: 1px solid #b5b5b5
-        border-radius: 20px
+    input, .select2-selection
+        height: 50px
+        border: 1px solid #000000
+        border-radius: 30px
         padding-left: 1em
+    .select2-selection
+        display: flex
+        align-items: center
+        b
+            left: 20 !important
+            top: 90% !important
     .password-input
         display: contents !important
     .woocommerce-address-fields__field-wrapper
