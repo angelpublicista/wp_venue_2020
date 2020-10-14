@@ -36,51 +36,58 @@ if ( post_password_required() ) {
 		<div class="row">
 			<div class="col-12 col-md-6">
 				<div class="vn-desc__video">
-					<iframe width="100%" height="500" src="https://www.youtube.com/embed/CTFtOOh47oo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<?php the_post_thumbnail("full");  ?>
+					<!-- <iframe width="100%" height="500" src="https://www.youtube.com/embed/CTFtOOh47oo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 				</div>		
 			</div>
 			<div class="col-12 col-md-6">
 				<h1 class="vn-desc__title"><?php the_title(); ?></h1>
 				<div class="vn-desc__date">
-					<span class="vn-desc__month"><?php echo get_the_date(F); ?></span>
-					<span class="vn-desc__year"><?php echo get_the_date(Y);?></span>
+					<span class="vn-desc__month"><?php echo get_the_date('F'); ?></span>
+					<span class="vn-desc__year"><?php echo get_the_date('Y');?></span>
 				</div>
 				<div class="vn-desc__description"><?php the_excerpt(); ?></div>
 			</div>
 		</div>
 	</div>
 </section>
+
+<!-- SECCION LOGOS APOYA -->
+<?php if(get_field('logos_apoya')): ?>
 <section id="vn-spon" class="vn-spon">
 	<div class="container">
 		<h2 class="vn-title text-center"><span>APOYAN</span></h2>
 		<div class="vs-slick" data-slick='{"slidesToShow": 3}'>
+			<?php 
+			$images_acf = get_field('logos_apoya'); 
+			$images_apoya = explode(",", $images_acf);
+			?>
+			<?php foreach($images_apoya as $img_apoya): ?>
+
 			<div class="item">
-				<img src="http://localhost/venue-virtual/wp-content/uploads/2020/10/Recurso-33-8.png" alt="">
+				<?php echo wp_get_attachment_image($img_apoya,"full" ); ?>
 			</div>
-			<div class="item text-center">
-				<img src="http://localhost/venue-virtual/wp-content/uploads/2020/10/Recurso-33-8.png" alt="">
-			</div>
-			<div class="item text-center">
-				<img src="http://localhost/venue-virtual/wp-content/uploads/2020/10/Recurso-33-8.png" alt="">
-			</div>
-			<div class="item text-center">
-				<img src="http://localhost/venue-virtual/wp-content/uploads/2020/10/Recurso-33-8.png" alt="">
-			</div>
+			<?php endforeach; ?>
 		</div>
 	</div>
 </section>
+<?php endif; ?>
+
 <section id="vn-ats" class="vn-ats">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-6 item pr-5">
 				<div class="content">
 					<h3>BOLETA GENERAL</h3>
-					<ul>
-						<li>Lorem ipsum dolor sit ammet</li>
-						<li>Lorem ipsum dolor sit ammet</li>
-						<li>Lorem ipsum dolor sit ammet</li>
-						<li>Lorem ipsum dolor sit ammet</li>
-					</ul>
+					<?php 
+						global $product;
+						echo $product->get_price_html();
+
+						$price_html = $product->get_price_html();
+
+
+					?>
+					<?php the_field('contenido_entrada_general'); ?>
 					<div class="row buttons">
 						<a href="#">AÑADIR AL CARRITO</a>
 						<a href="#">COMPRAR</a>
@@ -90,14 +97,9 @@ if ( post_password_required() ) {
 			<div class="col-12 col-md-6 item pl-5">
 				<div class="content">
 					<h3>BOLETA V.I.P</h3>
-					<ul>
-						<li>Lorem ipsum dolor sit ammet</li>
-						<li>Lorem ipsum dolor sit ammet</li>
-						<li>Lorem ipsum dolor sit ammet</li>
-						<li>Lorem ipsum dolor sit ammet</li>
-					</ul>
+					<?php the_field('contenido_entrada_vip'); ?>
 					<div class="row buttons">
-						<a href="#">AÑADIR AL CARRITO</a>
+						<a href="<?php echo home_url("/?add-to-cart=223"); ?>">AÑADIR AL CARRITO</a>
 						<a href="#">COMPRAR</a>
 					</div>
 				</div>
@@ -113,38 +115,18 @@ if ( post_password_required() ) {
 				<div class="col-12 col-md-4 vn-event__item">
 					<div class="vn-content">
 						<div class="icon">
-							<img src="http://localhost/venue-virtual/wp-content/uploads/2020/10/back-in-time.png" alt="">
-						</div>
-						<div class="date">
-							<span class="title">HORA</span>
-							<span class="desc">6:00PM-4:00AM</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 vn-event__item">
-					<div class="vn-content">
-						<div class="icon">
 							<img src="http://localhost/venue-virtual/wp-content/uploads/2020/10/appointment.png" alt="">
 						</div>
 						<div class="date">
 							<span class="title">FECHA</span>
-							<span class="desc">10 DE DICIEMBRE</span>
+							<?php 
+								$date_string_init = get_field('fecha_evento_inicio');
+								$date_init = DateTime::createFromFormat('Y-m-d H:i:s', $date_string_init);
+								echo '<span class="desc">'.$date_init->format('d M Y').'</span>';
+							?>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-4 vn-event__item">
-					<div class="vn-content">
-						<div class="icon">
-							<img src="http://localhost/venue-virtual/wp-content/uploads/2020/10/surf.png" alt="">
-						</div>
-						<div class="date">
-							<span class="title">CATEGORÍA</span>
-							<span class="desc">ONLINE</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row mt-5">
 				<div class="col-12 col-md-4 vn-event__item">
 					<div class="vn-content">
 						<div class="icon">
@@ -152,18 +134,14 @@ if ( post_password_required() ) {
 						</div>
 						<div class="date">
 							<span class="title">HORA</span>
-							<span class="desc">6:00PM-4:00AM</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 vn-event__item">
-					<div class="vn-content">
-						<div class="icon">
-							<img src="http://localhost/venue-virtual/wp-content/uploads/2020/10/appointment.png" alt="">
-						</div>
-						<div class="date">
-							<span class="title">FECHA</span>
-							<span class="desc">10 DE DICIEMBRE</span>
+							<?php 
+								$date_string = get_field('fecha_evento_inicio');
+								$date = DateTime::createFromFormat('Y-m-d H:i:s', $date_string);
+
+								$date_string_end = get_field('fecha_evento_cierre');
+								$date_end = DateTime::createFromFormat('Y-m-d H:i:s', $date_string_end);
+								echo '<span class="desc">'.$date->format('g:i A').' - '.$date_end->format('g:i A').'</span>';
+							?>
 						</div>
 					</div>
 				</div>
@@ -201,13 +179,14 @@ if ( post_password_required() ) {
 		</div>
 	</div>
 </section>
+<?php if(get_field('recomendaciones')): ?>
 <section id="vn-rec" class="vn-rec">
 	<div class="container">
 		<h3 class="vn-title text-center"><span>RECOMENDACIONES</span></h3>
-		<p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
+		<?php the_field('recomendaciones'); ?>
 	</div>
 </section>
+<?php endif; ?>
 <section id="vn-mdp" class="vn-mdp">
 	<figure class="circle"></figure>
 	<div class="container">
@@ -226,6 +205,7 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
 <section id="vn-recents" class="vn-recents">
 	<div class="container">
 		<h3 class="vn-title text-center"><span>EVENTOS DESTACADOS</span></h3>
+		<?php var_dump($product->get_cross_sell_ids()); ?>
 		<div class="vs-slick" data-slick='{"slidesToShow": 3}'>
 		<?php
 			$args = array(
@@ -245,8 +225,8 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
 					$string .= '<div class="vn-caption">';	
 					$string .= '<div class="content">';
 					$string .= '<h3>'.get_the_title().'</h3>';
-					$string .= '<span class="mr-2">'.get_the_date(F).'</span>';
-					$string .= '<span>'.get_the_date(j).'</span>';
+					$string .= '<span class="mr-2">'.get_the_date('F').'</span>';
+					$string .= '<span>'.get_the_date('j').'</span>';
 					$string .= '<div class="button mt-4">';
 					$string .= '<a href="'.get_the_permalink().'">VER MÁS</a>';
 					$string .= '</div>';

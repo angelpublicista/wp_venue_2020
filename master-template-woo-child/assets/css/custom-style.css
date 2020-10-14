@@ -58,7 +58,7 @@
 }
 
 .vn-desc {
-  background-image: url(http://localhost/venue-virtual/wp-content/uploads/2020/10/bg-sec1-sp.jpg);
+  background-color: black;
   padding: 4em 0;
 }
 .vn-desc__title {
@@ -110,7 +110,8 @@
   justify-content: center;
 }
 .vn-spon .vs-slick .item img {
-  width: 220px;
+  width: auto;
+  max-height: 80px;
 }
 .vn-spon .nav-left {
   position: absolute;
