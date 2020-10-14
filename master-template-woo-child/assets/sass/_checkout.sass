@@ -1,0 +1,50 @@
+#customer_details
+    padding: 2em 0 5em 0
+    .woocommerce-billing-fields
+        label
+            display: none
+        #billing_country_field, #criteriosustitucion_field
+            label
+                display: block
+        span
+            width: 100%
+        input, select, .select2-selection
+            height: 50px
+            padding-left: 1em
+            border-radius: 25px
+            border: 1px solid #000000
+        .select2-selection
+            display: flex
+            align-items: center
+            .select2-selection__arrow
+                b 
+                    right: 10px
+                    left: auto
+                    top: 100%
+    .woocommerce-additional-fields
+        display: none
+    .shop_table
+        border-color: #000000
+        td, th
+            border-color: #000000
+    #payment
+        padding: 1em
+        background-color: $s-color
+        label
+            color: #ffffff
+            line-height: 1.2em
+        .woocommerce-privacy-policy-text
+            p 
+                color: #ffffff
+                a 
+                    color: $p-color
+        #place_order
+            background-color: transparent !important
+            color: #ffffff !important
+            border-radius: 25px !important
+            padding: 1em 2em !important
+            transition: all .5s !important
+            border: 1px solid $p-color
+            &:hover
+                background-color: $p-color !important
+                color: #ffffff !important
