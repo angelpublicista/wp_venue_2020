@@ -56,6 +56,9 @@
   max-width: 100% !important;
   padding: 0 !important;
 }
+.single-product .sub-heading-section {
+  display: none !important;
+}
 
 .vn-desc {
   background-color: black;
@@ -99,7 +102,7 @@
   position: relative;
 }
 .vn-spon .vs-slick {
-  margin-top: 5em;
+  margin-top: 2em;
   padding: 0 3em;
 }
 .vn-spon .vs-slick i {
@@ -413,10 +416,12 @@
   border-radius: 40px;
   padding: 4em 3em 5em 3em;
   position: relative;
+  background-color: #517C99;
+  color: white;
 }
 .vn-ats .item .content h3 {
-  color: #ffffff;
-  background-color: #333333;
+  color: #EDB170;
+  background-color: white;
   line-height: 2em;
   margin-bottom: 1.5em;
 }
@@ -425,22 +430,27 @@
 }
 .vn-ats .item .content ul li {
   margin-bottom: 1em;
+  color: white;
+}
+.vn-ats .item .content .vn-prices h5 {
+  color: #EDB170;
+}
+.vn-ats .item .content .vn-prices .vn-price {
+  color: white !important;
 }
 .vn-ats .item .content .buttons {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: block;
-  text-align: center;
+  margin-bottom: -118px;
 }
-.vn-ats .item .content .buttons a {
-  color: #000000;
-  border: 1px solid #000000;
-  padding: 0.8em 1.5em;
-  border-radius: 30px;
-  background-color: #ffffff;
-  margin: 0 0.5em;
+.vn-ats .item .content .buttons .button-master {
+  display: inline-block;
+  line-height: 1em;
+  padding: 1em;
+  font-size: 0.9em;
+  margin: 1em;
+}
+.vn-ats .item .content .buttons .button-master.principal-button {
+  background-color: white;
+  border-radius: 50px;
 }
 
 #customer_details {
@@ -577,6 +587,16 @@
 }
 .box-top-header .link-language {
   padding: 0.5em;
+}
+
+.wpmenucart-contents {
+  color: white;
+}
+.wpmenucart-contents .amount {
+  color: white;
+}
+.wpmenucart-contents:hover {
+  color: white;
 }
 
 .form-master {

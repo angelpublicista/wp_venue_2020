@@ -2,6 +2,8 @@
     #container-page
         max-width: 100% !important
         padding: 0 !important
+    .sub-heading-section
+        display: none !important
 .vn-desc
     // background-image: url(http://localhost/venue-virtual/wp-content/uploads/2020/10/bg-sec1-sp.jpg)
     background-color: black
@@ -37,7 +39,7 @@
     padding: 4em 0
     position: relative
     .vs-slick
-        margin-top: 5em
+        margin-top: 2em
         padding: 0 3em
         i 
             font-size: 1.3em
@@ -301,26 +303,31 @@
             border-radius: 40px
             padding: 4em 3em 5em 3em
             position: relative
+            background-color: $s-color
+            color: white
             h3 
-                color: #ffffff
-                background-color: #333333
+                color: $p-color
+                background-color: white
                 line-height: 2em
                 margin-bottom: 1.5em
             ul
                 padding: 0
                 li 
                     margin-bottom: 1em
+                    color: white
+            .vn-prices
+                h5
+                    color: $p-color
+                .vn-price
+                    color: white !important
             .buttons
-                position: absolute
-                bottom: 0
-                left: 0
-                width: 100%
-                display: block
-                text-align: center
-                a 
-                    color: #000000
-                    border: 1px solid #000000
-                    padding: .8em 1.5em
-                    border-radius: 30px
-                    background-color: #ffffff
-                    margin: 0 .5em
+                margin-bottom: -118px
+                .button-master
+                    display: inline-block
+                    line-height: 1em
+                    padding: 1em
+                    font-size: .9em
+                    margin: 1em
+                    &.principal-button
+                        background-color: white
+                        border-radius: 50px
