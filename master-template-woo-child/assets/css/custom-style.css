@@ -753,6 +753,19 @@
   color: white;
 }
 
+.cont-card-event .img-card-event {
+  object-fit: cover;
+}
+.cont-card-event .info-card-event {
+  font-family: "Din Bold", sans-serif;
+  background: #edb170;
+  border-radius: 0 30px 30px 0;
+  padding: 0.5em;
+  top: 0;
+  left: 0px;
+  margin-top: 10%;
+}
+
 .form-master {
   background-color: transparent !important;
   color: white !important;
