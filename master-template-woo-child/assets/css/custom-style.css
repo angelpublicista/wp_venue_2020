@@ -21,6 +21,34 @@
   background-color: #EDB170;
 }
 
+#enc-home .info-header-home {
+  display: flex;
+  align-items: center;
+}
+#enc-home .info-header-home .icon {
+  border: 2px solid #EDB170;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 0.6em;
+}
+#enc-home .info-header-home .icon img {
+  width: 35px;
+}
+#enc-home .info-header-home .icon__02 {
+  border: 2px solid #333333;
+}
+#enc-home .info-header-home .title {
+  font-size: 22px;
+  margin: 0;
+}
+#enc-home .info-header-home .title__02 {
+  color: #EDB170;
+}
+
 .slick-footer-brands {
   margin: 2em 0;
 }
@@ -517,7 +545,6 @@
 }
 
 .woocommerce-cart .entry-content {
-  margin-top: 9em;
   margin-bottom: 5em;
 }
 .woocommerce-cart .entry-content .woocommerce-info {
@@ -561,7 +588,7 @@
 }
 
 #customer_login {
-  margin: 7em 0 4em 0;
+  margin-bottom: 4em;
 }
 #customer_login h2 {
   line-height: 2em;
@@ -602,10 +629,6 @@
 }
 #customer_login .u-column1 .woocommerce-form .woocommerce-form__label-for-checkbox input, #customer_login .u-column2 .woocommerce-form .woocommerce-form__label-for-checkbox input {
   height: 10px;
-}
-
-.woocommerce-account .entry-content {
-  margin: 9em 0 5em 0;
 }
 
 .woocommerce-MyAccount-navigation {
@@ -714,6 +737,9 @@
   width: 100% !important;
 }
 
+.box-top-header .info-contact {
+  display: none;
+}
 .box-top-header .box-info-menu span {
   color: white;
 }
@@ -732,7 +758,16 @@
 .sticky-header {
   z-index: 2 !important;
 }
+.sticky-header .img-brand {
+  transform: scale(3);
+}
+.sticky-header .box-logo-and-nav {
+  padding: 1.7em 0 !important;
+}
 
+.box-top-header .info-contact {
+  display: none;
+}
 .box-top-header .box-info-menu span {
   color: white;
 }
@@ -764,6 +799,22 @@
   top: 0;
   left: 0px;
   margin-top: 10%;
+}
+
+.top-footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2em;
+}
+.top-footer li {
+  margin-bottom: 1em;
+}
+.top-footer a {
+  color: #ffffff;
+  transition: all 0.4s;
+}
+.top-footer a:hover {
+  color: #EDB170;
 }
 
 .form-master {

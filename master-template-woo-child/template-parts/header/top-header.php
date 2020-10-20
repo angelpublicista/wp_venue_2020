@@ -13,7 +13,7 @@ global $geniorama
 
 <div class="box-top-header <?php echo(!$geniorama['mobile-top-header-on-off']) ? "hide-on-mobile": "" ?>">
 	<div class="content justify-content-end <?php echo ($geniorama['header-top-full-w-on-off']) ? "full-width": "container" ?>">
-		<?php get_template_part("template-parts/buttons/info-buttons") ?>
+		<!--?php get_template_part("template-parts/buttons/info-buttons") ?-->
 		
 		<?php if($geniorama['opt-multi-select-social-buttons'] || $geniorama['search-on-off']): ?>
 			<ul class="nav">
