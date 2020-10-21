@@ -30,9 +30,16 @@ global $geniorama
 				<?php if($geniorama['search-on-off']): ?>
 					<?php show_search_button("top-header-buttons") ?>
 				<?php endif; ?>
-
-				<li class="nav-item nav-link link-language ml-2"><?php echo do_shortcode('[glt language="Spanish" label="Español" image="yes" text="no" image_size="24"]'); ?></li>
-				<li class="nav-item nav-link link-language"><?php echo do_shortcode('[glt language="English" label="English" image="yes" text="no" image_size="24"]'); ?></li>
+				
+				<div class="dropdown dropdown-languages">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Seleccione el lenguaje
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<?php echo do_shortcode('[glt language="Spanish" label="Español" image="yes" text="yes" image_size="24"]'); ?>
+					<?php echo do_shortcode('[glt language="English" label="English" image="yes" text="yes" image_size="24"]'); ?>
+				</div>
+				</div>
 			</ul>
 		<?php endif; ?>
 	</div>

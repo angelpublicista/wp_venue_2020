@@ -1,5 +1,5 @@
 import $ from "jquery"
-import "./../node_modules/bootstrap/js/dist/modal"
+import 'bootstrap';
 import { log } from "handlebars";
 import stickyEffect from "./modules/sticky-effect"
 import SmoothScroll from "smooth-scroll"

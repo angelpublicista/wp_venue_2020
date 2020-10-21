@@ -10,4 +10,6 @@ jQuery(function ($) {
         nextArrow: `<button class='nav-right'><i class="fas fa-angle-right"></i></button>`
     });
 
+    $('.dropdown-languages .single-language').addClass('dropdown-item');
+
 });
