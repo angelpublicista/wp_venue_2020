@@ -62,7 +62,7 @@ if ( post_password_required() ) {
 
 	<!-- SECCION LOGOS APOYA -->
 	<?php if(get_field('logos_apoya')): ?>
-	<section id="vn-spon" class="vn-spon">
+	<!--section id="vn-spon" class="vn-spon">
 		<div class="container">
 			<h2 class="vn-title text-center"><span>APOYAN</span></h2>
 			<div class="vs-slick" data-slick='{"slidesToShow": 3}'>
@@ -78,7 +78,7 @@ if ( post_password_required() ) {
 				<?php endforeach; ?>
 			</div>
 		</div>
-	</section>
+	</section-->
 	<?php endif; ?>
 
 	<section id="vn-ats" class="vn-ats">
@@ -136,8 +136,8 @@ if ( post_password_required() ) {
 						<?php the_field('contenido_entrada_general'); ?>
 						<div class="vn-prices vp-prices--general mt-3">
 							<h5>Precio:</h5>
-							<span class="vn-price vp-price--usd mr-3">USD: $50 USD</span>
-							<span class="vn-price vp-price--cop">COP: $180.000</span>
+							<span class="vn-price vp-price--cop">COP: $<?php echo get_field('valor_precio_colombiano_entrada_general');?></span>
+							<span class="vn-price vp-price--usd mr-3">USD: $<?php echo get_field('valor_dolares_entrada_general');?></span>
 						</div>
 						<div class="row buttons">
 							<a href="<?php echo home_url("/cart/?add-to-cart=".$id_general.""); ?>" class="button-master principal-button">AÑADIR AL CARRITO</a>
@@ -151,8 +151,8 @@ if ( post_password_required() ) {
 						<?php the_field('contenido_entrada_vip'); ?>
 						<div class="vn-prices vp-prices--vip my-3">
 							<h5>Precio:</h5>
-							<span class="vn-price vp-price--usd mr-3">USD: $50 USD</span>
-							<span class="vn-price vp-price--cop">COP: $180.000</span>
+							<span class="vn-price vp-price--cop">COP: $<?php echo get_field('valor_precio_colombiano_entrada_vip');?></span>
+							<span class="vn-price vp-price--usd mr-3">USD: $<?php echo get_field('valor_dolares_entrada_vip');?></span>
 						</div>
 						<div class="row buttons">
 							<a href="<?php echo home_url("/cart/?add-to-cart=".$id_vip.""); ?>" class="button-master principal-button">AÑADIR AL CARRITO</a>
