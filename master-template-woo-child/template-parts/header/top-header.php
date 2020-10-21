@@ -33,7 +33,7 @@ global $geniorama
 				
 				<div class="dropdown dropdown-languages">
 				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Seleccione el lenguaje
+					Lenguaje
 				</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 					<?php echo do_shortcode('[glt language="Spanish" label="Español" image="yes" text="yes" image_size="24"]'); ?>
