@@ -49,6 +49,14 @@
   color: #EDB170;
 }
 
+.dropdown-languages {
+  top: 10px;
+}
+.dropdown-languages #dropdownMenuButton {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
 .slick-footer-brands {
   margin: 2em 0;
 }
