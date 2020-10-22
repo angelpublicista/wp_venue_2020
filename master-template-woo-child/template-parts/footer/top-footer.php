@@ -59,5 +59,6 @@ global $geniorama
 				</div>
 			</div>
 		<?php endif; ?>
+		
 	</div>
 </div>
