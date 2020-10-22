@@ -59,6 +59,11 @@ global $geniorama
 				</div>
 			</div>
 		<?php endif; ?>
-		
+		<div class="slick-footer-brands patrocinadores" data-slick='{"slidesToShow":4,"arrows":false, "dots": false}'>
+		    <img src="https://geniorama.site/demo/venue-virtual/wp-content/uploads/2020/10/logo-vypeRecurso-2@2x-1.png" alt="">
+		    <img src="https://geniorama.site/demo/venue-virtual/wp-content/uploads/2020/10/logo-grantsRecurso-3@2x-1.png" alt="">
+		    <img src="https://geniorama.site/demo/venue-virtual/wp-content/uploads/2020/10/logo-radionicaRecurso-4@2x-1.png" alt="">
+		    <img src="https://geniorama.site/demo/venue-virtual/wp-content/uploads/2020/10/logo-avalRecurso-1@2x-1.png" alt="">
+		</div>
 	</div>
 </div>
